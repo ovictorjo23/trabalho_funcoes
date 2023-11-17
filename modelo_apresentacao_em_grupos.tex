@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{makeidx}
+\usepackage{amsfonts}
+\usepackage[all]{xy} 
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{gensymb}
+
+
+%Margens da Tela:
+
+\setlength{\topmargin}{-1.0cm}
+\setlength{\evensidemargin}{-0.3cm}
+\setlength{\oddsidemargin}{-0.3cm}
+\setlength{\textwidth}{15.5cm}
+\setlength{\textheight}{21cm}
+
+\newtheorem{defi}{Definição}[section]
+\newtheorem{theo}{Teorema}[section]
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{prop}{Proposição}[section]
+\newtheorem{cor}{Corolário}[section]
+\newtheorem{com}{Comentário}[section]
+
+
+
+\begin{document}
+	
+	
+	\begin{center}
+		{\Large Plano de Aula \\ Apresentação de Ensino de Funções}
+	\end{center}
+	
+	\vspace{2cm}
+	
+	\noindent \textbf{Grupo}: Nome dos integrantes... \\
+	
+	\noindent \textbf{Tema da aula}: ``Radioatividade e Funções Exponenciais...'' \\
+	
+	\noindent \textbf{Contexto}: Indique nesse parágrafo qual é o público dessa apresentação. Indique também os pré-requisitos necessários para o entendimento dessa aula. \\ 
+	
+	\noindent \textbf{Objetivos da Aula}: Indique nesse parágrafo os tópicos principais que serão discutidos bem como os objetivos principais de sua apresentação, de maneira cronológica (um roteiro).\\
+	
+	\noindent \textbf{Referência Principal}: Indique nesse parágrafo quais foram os principais materiais usados para a preparação dessa apresentação (livros, notas de aula, vídeos, etc...) quando for o caso.
+	
+	\newpage 
+	
+	\section{Funções xxx e principais propriedades}
+	
+	Nessa seção, explique o básico sobre o tipo de função escolhido pelo seu grupo. É necessário enfatizar as propriedades essenciais sobre o tipo de função escolhida que serão usadas na aplicação. \\
+	
+	Alguns símbolos úteis e comuns que são usados no Latex para escrever esse texto:\\
+	
+	Uma função com domínio e contra-domínio no conjunto dos números reais: $f:\mathbb{R} \rightarrow \mathbb{R}$. A regra de uma função, por exemplo quadrática, pode ser escrita como $f(x)=ax^2+bx+c$. 
+	O conjunto das raízes de uma função pode ser escrito como
+	$$Z=\{x \in \mathbb{R}; f(x)=0\}.$$
+	
+	Será útil colocar imagens para ajudar a ilustrar ideias. O ideal é que o formato das imagens seja \textbf{.png}. O comando mais simples para colocar imagens é o seguinte:
+	
+	\begin{center}
+		%\includegraphics{nomedaimagem.png}
+	\end{center}
+	
+	Para usar o comando acima, é necessário colocar o arquivo da imagem na mesma pasta onde o arquivo .tex estiver depositado, e com nome exatamente igual ao do comando acima. O símbolo de porcentagem na linha do comando includegraphics serve para ocultar o comando e ele não ser compilado. Quando forem usar esse comando, removam a porcentagem que precede o comando.
+	
+	Se precisar fazer escrever equações usando manipulações, o ambiente ideal para isso no Latex é o eqnarray, como no exemplo abaixo:
+	
+	\begin{eqnarray} 
+	 ax^2+bx+c=0 & \Leftrightarrow & a\cdot \left( x^2+\frac{b}{a}x+\frac{c}{a}  \right) =0 \\
+	 			 & \Leftrightarrow &  \left(x+\frac{b}{2a}\right)^2 -\frac{b^2}{4a^2}+c=0  \\
+	 			 & \Leftrightarrow & \left( x+\frac{b}{2a} \right)^2 = \frac{\Delta}{4a^2}.
+	\end{eqnarray} 
+	Se você colocar um asterisco no fim do eqnarray (tanto no begin quanto do end), ele não numera as equações:
+	
+	\begin{eqnarray*} 
+	\Delta>0 \Rightarrow x=\frac{-b+\sqrt{\Delta}}{2a} \textrm{ ou } x=\frac{-b-\sqrt{\Delta}}{2a}.
+	\end{eqnarray*} 
+	
+	Muito cuidado ao usar imagens, sempre que elas não são feitas por vocês mesmos, o ideal é fazer referência de onde a imagem foi tiradas. As imagens que vocês mesmos fizerem podem ser feitas por exemplo no Geogebra.
+	
+	
+	\newpage 
+	
+	\section{A seção sobre a Aplicação}
+	
+	Nessa seção explique a aplicação em si, ou seja, qual é o contexto, a que área da ciência ela pertence e qual é sua relevância. Em seguida explique o problema proposto. Finalmente, você explicará o \textcolor{red}{processo de modelagem}, isto é, como colocar o problema proposto no papel, matematicamente. Geralmente a pergunta do problema leva a elaboração de uma função cuja regra descreve o que ocorre no problema. A dificuldade em geral é traduzir as hipóteses do problema real em equações matemáticas, que darão origem a função do tipo escolhido. \\
+	
+	Sejam didáticos! Escreva, se possível, exemplos de situações em que seu processo de modelagem se aplica. Vocês vão simular uma aula real, uma aula sem exemplos não é aula.
+	
+\end{document}
